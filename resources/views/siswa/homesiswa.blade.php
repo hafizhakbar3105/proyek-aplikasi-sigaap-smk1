@@ -9,9 +9,28 @@ if ($userRole === 'student') {
     $currentPoints = 85;
     $totalAttendance = 95;
     $menuItems = [
-        ['icon' => 'clipboard-check', 'title' => 'Absensi', 'desc' => 'Check in & out', 'color' => 'bg-red-600', 'link' => 'attendance.php'],
-        ['icon' => 'award', 'title' => 'Poin Disiplin', 'desc' => "$currentPoints poin", 'color' => 'bg-gray-800', 'link' => 'points.php'],
-        ['icon' => 'book-open', 'title' => 'Buku Kedisiplinan', 'desc' => 'Tata tertib sekolah', 'color' => 'bg-gray-900', 'link' => 'discipline.php'],
+        [
+    'icon'  => 'clipboard-check',
+    'title' => 'Absensi',
+    'desc'  => 'Check in & out',
+    'color' => 'bg-red-600',
+    'link'  => route('absen'),
+],
+[
+    'icon'  => 'award',
+    'title' => 'Poin Disiplin',
+    'desc'  => "{{ $currentPoints }} poin",
+    'color' => 'bg-gray-800',
+    'link'  => '{{ route("points") }}',
+],
+[
+    'icon'  => 'book-open',
+    'title' => 'Buku Kedisiplinan',
+    'desc'  => 'Tata tertib sekolah',
+    'color' => 'bg-gray-900',
+    'link'  => '{{ route("discipline") }}',
+],
+
     ];
 } elseif ($userRole === 'teacher') {
     $userName = 'Ibu Siti Rahmawati';
