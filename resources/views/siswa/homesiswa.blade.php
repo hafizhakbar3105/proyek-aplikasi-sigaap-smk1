@@ -4,7 +4,7 @@ $userRole = 'student';
 
 // Data Berdasarkan Role
 if ($userRole === 'student') {
-    $userName = 'Ahmad Fauzi';
+    $userName = 'Fadhla Alfa';
     $userDetail = 'XII RPL 1 • NIS: 12345';
     $currentPoints = 85;
     $totalAttendance = 95;
@@ -168,7 +168,7 @@ if ($userRole === 'student') {
                 <i data-lucide="<?= $userRole === 'student' ? 'award' : 'shield' ?>" class="w-6 h-6"></i>
                 <span class="text-[10px]"><?= $userRole === 'student' ? 'Poin' : 'Monitor' ?></span>
             </a>
-            <a href="profile.php" class="flex flex-col items-center gap-1 text-gray-400">
+            <a href="{{ route('profile') }}" class="flex flex-col items-center gap-1 text-gray-400">
                 <i data-lucide="user" class="w-6 h-6"></i>
                 <span class="text-[10px]">Profil</span>
             </a>
