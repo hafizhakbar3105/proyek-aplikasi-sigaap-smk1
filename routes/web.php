@@ -24,6 +24,15 @@ Route::get('siswa/bukukedisiplinan', function () {
     return view('siswa/bukukedisiplinan');
 })->name('bukukedisiplinan');
 
+Route::get('siswa/poinkedisiplinan', function () {
+    return view('siswa/poinkedisiplinan');
+})->name('poinkedisiplinan');
+
+Route::get('siswa/profile', function () {
+    return view('siswa/profile');
+})->name('profile');
+
+
 
 Route::get('/home guru', function () {
     return view('guru/homeguru');
