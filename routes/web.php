@@ -11,10 +11,14 @@ Route::get('/login', function () {
     return view('login');
 })->name('login');
 
-Route::get('/dasboard siswa', function () {
-    return view('dasboardsiswa');
-})->name('dasboardsiswa');
+Route::get('/home siswa', function () {
+    return view('siswa/homesiswa');
+})->name('homesiswa');
 
-Route::get('/dasboard guru', function () {
-    return view('dasboardguru');
-})->name('dasboardguru');
+Route::get('/home guru', function () {
+    return view('guru/homeguru');
+})->name('homeguru');
+
+Route::get('/home osis', function () {
+    return view('osis/homeosis');
+})->name('homeosis');

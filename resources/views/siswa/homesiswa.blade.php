@@ -141,7 +141,7 @@ if ($userRole === 'student') {
                 <i data-lucide="home" class="w-6 h-6"></i>
                 <span class="text-[10px]">Beranda</span>
             </a>
-            <a href="discipline.php" class="flex flex-col items-center gap-1 text-gray-400">
+            <a href="{{ route('login') }}" class="flex flex-col items-center gap-1 text-gray-400">
                 <i data-lucide="book-open" class="w-6 h-6"></i>
                 <span class="text-[10px]">Tata Tertib</span>
             </a>
