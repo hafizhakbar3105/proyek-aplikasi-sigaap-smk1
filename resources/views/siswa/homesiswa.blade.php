@@ -21,7 +21,7 @@ if ($userRole === 'student') {
     'title' => 'Poin Disiplin',
     'desc'  => "{{ $currentPoints }} poin",
     'color' => 'bg-gray-800',
-    'link'  => '{{ route("points") }}',
+    'link'  => route(name:'poinkedisiplinan'),
 ],
 [
     'icon'  => 'book-open',
