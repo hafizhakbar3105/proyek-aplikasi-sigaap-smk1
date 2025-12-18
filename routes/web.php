@@ -25,9 +25,38 @@ Route::get('siswa/bukukedisiplinan', function () {
 })->name('bukukedisiplinan');
 
 
+
+
 Route::get('/home guru', function () {
     return view('guru/homeguru');
 })->name('homeguru');
+
+Route::get('guru/pelanggaran', function () {
+    return view('guru/pelanggaran');
+})->name('pelanggaran');
+
+Route::get('guru/kedisiplinan', function () {
+    return view('guru/kedisiplinan');
+})->name('kedisiplinan');
+
+Route::get('guru/dataabsen', function () {
+    return view('guru/dataabsen');
+})->name('dataabsen');
+
+Route::get('guru/poin', function () {
+    return view('guru/poin');
+})->name('poin');
+
+Route::get('guru/profile', function () {
+    return view('guru/profile');
+})->name('profile');
+
+Route::get('guru/statistik', function () {
+    return view('guru/statistik');
+})->name('statistik');
+
+
+
 
 Route::get('/home osis', function () {
     return view('osis/homeosis');
