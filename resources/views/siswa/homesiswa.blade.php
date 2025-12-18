@@ -28,7 +28,7 @@ if ($userRole === 'student') {
     'title' => 'Buku Kedisiplinan',
     'desc'  => 'Tata tertib sekolah',
     'color' => 'bg-gray-900',
-    'link'  => '{{ route("discipline") }}',
+    'link'  => route('bukukedisiplinan'),
 ],
 
     ];

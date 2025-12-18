@@ -20,6 +20,10 @@ Route::get('siswa/absen', function () {
     return view('siswa/absen');
 })->name('absen');
 
+Route::get('siswa/bukukedisiplinan', function () {
+    return view('siswa/bukukedisiplinan');
+})->name('bukukedisiplinan');
+
 
 Route::get('/home guru', function () {
     return view('guru/homeguru');
