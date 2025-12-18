@@ -32,3 +32,7 @@ Route::get('/home guru', function () {
 Route::get('/home osis', function () {
     return view('osis/homeosis');
 })->name('homeosis');
+
+Route::get('/dashboard osis', function () {
+    return view('osis/dashboard-osis');
+})->name('dashboardosis');
