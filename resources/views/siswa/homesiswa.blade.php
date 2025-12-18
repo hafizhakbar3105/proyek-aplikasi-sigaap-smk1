@@ -4,8 +4,8 @@ $userRole = 'student';
 
 // Data Berdasarkan Role
 if ($userRole === 'student') {
-    $userName = 'Fadhla Alfa';
-    $userDetail = 'XII RPL 1 • NIS: 12345';
+    $userName = 'Fadhla Alfairus';
+    $userDetail = 'Teknik Informatika • NIM: 2430511004';
     $currentPoints = 85;
     $totalAttendance = 95;
     $menuItems = [
